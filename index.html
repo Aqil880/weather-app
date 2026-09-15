@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌥️Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+
+
+<body>
+
+    <div class = "weather-app">
+        <section class="weather-main">
+        <div class="current-weather">
+            <div class="Teperature" id="temperature">15°C</div>
+            <div class="weather-info">
+                <h1 id="cityName">New Delhi</h1>
+                <p class="date" id="date">Friday, 28 Aug 2026 .730 PM</p>
+                <div class="condition" id="condition"> Rainy</div>
+            </div>
+            
+        </div>
+        </section>
+
+        <!----------right side------------>
+
+        <aside class="sidebar">
+            <div class="search-bar">
+                <input id="cityInput" type="text" placeholder="Add Another Location">
+                <button id="searchBtn">
+                    🔍
+                </button>
+            </div>
+
+            <div class="locations">
+                <p>Mumbai</p>
+                <p>Jaipur</p>
+                <p>Vellore</p>
+                <p>Alwar</p>
+            </div>
+
+            <!-----------------weather details-------->
+
+            <div class="details">
+                <h2>Weather details</h2>
+
+                <div class="detail-row">
+                    <span>Temperature</span>
+                    <strong id="detailTemperature">15°C</strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Cloud</span>
+                    <strong id="cloud">90%</strong>
+                </div>
+                <div class="detail-row">
+                    <span>Humidity</span>
+                    <strong id="humidity">45%</strong>
+                </div>
+                <div class="detail-row">
+                    <span>Wind</span>
+                    <strong id="wind">10km/hr</strong>
+                </div>
+                <div class="detail-row">
+                    <span>Rain</span>
+                    <strong id="rain">5 mm</strong>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

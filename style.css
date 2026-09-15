@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    font-family: "Inter", sans-serif;
+
+    background: #111;
+    color: white;
+
+    background:
+        linear-gradient(
+             rgba(0, 0, 0, 0.25),
+             rgba(0, 0, 0, 0.45)
+        ),     
+        url("pexels-sonny-6269055.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app{
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    overflow: hidden;
+
+    border-radius: 0;
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+}
+
+.weather-main{
+    position: relative;
+    min-height: 100vh;
+
+    padding: 40px;
+
+    overflow: hidden;
+    background-image: url("pexels-sonny-6269055.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background: transparent;
+}
+
+.current-weather{
+    position: absolute;
+
+    left: 45px;
+    bottom: 45px;
+
+    display: flex;
+    align-items: flex-end;
+
+    gap: 25px;
+}
+
+.temperature{
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 0.9;
+
+    line-height: 1;
+
+}
+
+.weather-info h1{
+    font-size: 38px;
+    font-weight: 400;
+
+    margin-bottom: 8px;
+}
+
+.date{
+    font-size: 14px;
+
+    opacity: 0.75;
+    margin-bottom: 12px;
+}
+
+.condition{
+    font-size: 18px;
+
+}
+
+.sidebar{
+    padding: 40px;
+
+    background: rgba(15, 25, 45, 0.45);
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+
+    height: 55px;
+
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-bar input{
+    flex: 1;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.search-bar input::placeholder{
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.search-bar button{
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+.locations{
+    padding: 20px 0 30px;
+
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.locations p{
+    margin: 18px 0;
+
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.locations p:hover{
+    color: white;
+
+    transform: translateX(5px);
+}
+
+.details{
+    padding-top: 30px;
+}
+.details h2{
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+.detail-row{
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 20px 0;
+
+    font-size: 14px;
+}
+.detail-row span{
+    color: rgba(255, 255, 255, 0.65);
+}
+.detail-row strong{
+    font-weight: 500;
+}
